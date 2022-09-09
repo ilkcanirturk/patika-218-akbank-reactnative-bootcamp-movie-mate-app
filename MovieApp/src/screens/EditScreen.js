@@ -7,10 +7,11 @@ import {
     TextInput,
     TouchableOpacity,
   } from 'react-native';
-  import React, {useState} from 'react';
+  import React from 'react';
   import {useNavigation} from '@react-navigation/core';
   import AntDesign from 'react-native-vector-icons/AntDesign';
   
+  //needs to be develop.( + import useState )
   const EditScreen = () => {
     const [email, onChangeEmail] = React.useState('');
     const [username, onChangeUsername] = React.useState('');
