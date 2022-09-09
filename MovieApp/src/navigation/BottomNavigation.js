@@ -1,4 +1,3 @@
-import {StyleSheet, Text, View} from 'react-native';
 import React, {useContext} from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import HomeScreen from '../screens/HomeScreen';
