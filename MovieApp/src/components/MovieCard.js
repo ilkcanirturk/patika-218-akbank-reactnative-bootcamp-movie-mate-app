@@ -1,12 +1,13 @@
 import {StyleSheet, Text, View, Image, TouchableOpacity} from 'react-native';
-import React, {useContext, useState} from 'react';
+import React, {useContext} from 'react';
 import EvilIcons from 'react-native-vector-icons/EvilIcons';
 import {ThemeContext} from '../context/theme';
 
+//For shown Movie pictures with URL
 const getPosterURL = posterpath => {
   return `https://www.themoviedb.org/t/p/w220_and_h330_face${posterpath}`;
 };
-
+//Show movie list.
 const MovieCard = ({poster_path, title, release_date, vote_average}) => {
   const {theme} = useContext(ThemeContext);
   return (
