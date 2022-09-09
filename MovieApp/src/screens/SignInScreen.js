@@ -7,14 +7,16 @@ import {
   TextInput,
   TouchableOpacity,
 } from 'react-native';
-import React, {useState} from 'react';
+import React from 'react';
 import {useNavigation} from '@react-navigation/core';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 
+
+//Needs to be develop. (+ import useState)
 const SignInScreen = () => {
   const [username, onChangeUsername] = React.useState('');
   const [password, onChangePassword] = React.useState('');
-
+//  Navigations
   const navigation = useNavigation();
   const onPress1 = () => {
     navigation.navigate('BottomNavigation');
