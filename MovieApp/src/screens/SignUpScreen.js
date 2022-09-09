@@ -7,7 +7,7 @@ import {
     TextInput,
     TouchableOpacity,
   } from 'react-native';
-  import React, {useState} from 'react';
+  import React from 'react';
   import {useNavigation} from '@react-navigation/core';
   import AntDesign from 'react-native-vector-icons/AntDesign';
   
@@ -45,7 +45,7 @@ import {
               placeholder="E-mail"
               style={styles.input}
               onChangeText={onChangeEmail}
-              value={username}
+              value={email}
             />
             <TextInput
               placeholder="Username"
